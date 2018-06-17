@@ -5,7 +5,7 @@
 
 # ErrorDocument <errorNumber> <path>
 # Direct 'Page not found' errors to a specified page			
-ErrorDocument 404 /students/dtrerise/error.html
+ErrorDocument 404 https://d-s-tree.github.io/dylan_comp_1950/error.html
 
 # AddType and AddHandler can be instructed to parse .html files as .php
 AddType application/x-httpd-php .html
