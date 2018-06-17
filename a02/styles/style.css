@@ -1,0 +1,229 @@
+/* BCIT COMP 1950 */
+/* ASSIGNMENT 1: WEB PAGE FOR ASSIGNMENTS */
+/* DYLAN TRERISE - JAN 16 2018 */
+
+/* styling for web page from here! */
+
+body {
+	background-image: url(../images/seigaiha.png);
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #dee9ed;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+header .header-content {
+	
+}
+
+header .top-nav {
+	background-color: #265978;
+}
+
+header .top-nav ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header .top-nav a{
+	color: #dee4e8;
+}
+
+.header-content {
+	/*background-image: url(");*/
+	height: 350px;
+	position: relative;
+	background-image: url(../images/bridge2.png);
+
+}
+
+header .title-text {
+	font-size: 1.4rem;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	color: #dee4e8;
+}
+
+main, footer {
+	padding: 20px 30px;
+}
+
+
+main h2 {
+	font-size: 2.4rem;
+	font-family: 'Bitter', serif;
+	padding-bottom: 10px;
+}
+
+main p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#about {
+	padding-top: 40px;
+}
+#about p {
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+}
+
+#places-on-map {
+	display: flex;
+	padding: 40px 0;
+}
+
+.map-links {
+	display: flex;
+	width: 50%;
+	flex-wrap: wrap;
+}
+
+.map-places img {
+	width: 50%;
+	height: 50%;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+#places article {
+	padding-bottom: 40px;
+}
+
+#places h3 {
+	font-size: 1.8rem;
+	font-family: 'Bitter', serif;
+	padding-bottom: 20px
+}
+
+#places .article-container {
+	display: flex;
+}
+
+.article-container figure {
+	width: 40%;
+}
+
+.article-container p {
+	width: 48%;
+	padding: 20px 30px;
+	line-height: 1.6rem;
+}
+
+.article-container aside {
+	
+}
+
+#places figure img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	border-radius: 10px;
+}
+
+figure figcaption {
+	font-size: 0.8rem;
+	font-style: italic;
+	padding: 5px 0 10px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 1.2rem;
+}
+
+#places aside {
+	padding: 20px 0 0 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+#places aside h4 {
+	padding-bottom: 20px;
+}
+
+#places aside meter {
+	padding-left: 10px;
+}
+
+#links {
+	padding-bottom: 40px;
+	line-height: 1.4rem;
+}
+
+#links h1 {
+	font-size: 1.8rem;
+	font-family: 'Bitter', serif;
+	padding-bottom: 10px;
+}
+
+#links ul {
+	padding-left: 30px;
+	line-height: 2rem;
+}
+
+#contact {
+	padding-bottom: 40px;
+	line-height: 1.4rem;
+}
+
+#contact h1 {
+	font-size: 1.8rem;
+	font-family: 'Bitter', serif;
+	padding-bottom: 10px;
+}
+
+.validate a {
+	text-decoration: none;
+	font-family:;
+	color: black;
+	font-size: 1.4rem;
+	font-style: italic;
+}
+
+.validate {
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.btm-nav {
+	border-top: 2px solid #265978;
+	border-bottom: 2px solid #265978;
+}
+
+.btm-nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.btm-nav a {
+	color: #265978;
+}
+
+
+.footer {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+	font-family: ;
+	line-height: 1.6rem;
+	font-size: .8rem;
+  border-top: 1px dotted rgb(220,220,220);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #265978;
+}

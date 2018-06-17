@@ -1,0 +1,447 @@
+/* BCIT COMP 1950 */
+/* ASSIGNMENT 5: RESPONSIVE LAYOUT */
+/* DYLAN TRERISE - FEB 22 2018 */
+
+/* CSS3 THINGS NOT INCLUDED ON HW5 LIST:
+- pseudo-class selectors: first-of-type, nth-of-type(n) used in styling
+- use of media queries for specific styles for smaller width screen
+- use of rem values for font sizes and line-heights
+- use of flexbox
+
+
+/* styling for web page from here! */
+
+/* color scheme:
+
+- #fff228 GOLDEN YELLOW 
+- #fff black
+- #000 white
+- #e5040b red;
+- #f90493 hot pink;
+*/
+
+/* import fonts from google fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Cantata+One|Open+Sans");
+
+/* font stacks 
+
+font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+font-family: 'Cantata One', serif;
+*/
+
+
+body {
+	
+}
+
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+
+
+* > a {
+	color: inherit;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+.highcontrast {
+  filter:contrast(120%);
+}
+
+header {
+  background: -webkit-linear-gradient(#fff, #fff, #fff, #fff, #fff, #fff,#fff,#fff,#fff,#fff,#fff,#fff228);
+  background: -ms-linear-gradient(#fff, #fff, #fff, #fff, #fff, #fff,#fff,#fff,#fff,#fff,#fff,#fff228);
+  background: -o-linear-gradient(#fff, #fff, #fff, #fff, #fff, #fff,#fff,#fff,#fff,#fff,#fff,#fff228);
+  background: -moz-linear-gradient(#fff, #fff, #fff, #fff, #fff, #fff,#fff,#fff,#fff,#fff,#fff,#fff228);
+  
+}
+
+header .title-text {
+  font-family: 'Cantata One', serif;
+  text-align: center;
+  height: 260px;
+  line-height: 280px;
+  font-size: 6.6rem;
+  -ms-transform: rotate(-6deg) skewX(5deg); /* IE 9 */
+  -webkit-transform: rotate(-6deg) skewX(5deg); /* Safari */
+  transform: rotate(-6deg) skewX(5deg);
+  text-shadow: 0 3px 0 #e5040b;
+}
+
+nav a {
+	text-decoration: none;
+  font-size: 1.4rem;
+  
+  /* add transition */
+  -moz-transition: 	text-shadow 0.4s ease;
+  -ms-transition: 	text-shadow 0.4s ease;
+  -o-transition: 	text-shadow 0.4s ease;
+  -webkit-transition: 	text-shadow 0.3s ease;
+  transition: 		text-shadow 0.4s ease;
+}
+
+/* unvisited link */
+nav a:link {
+    color: #000;
+}
+
+/* visited link */
+nav a:visited {
+   color: #000;
+}
+
+/* mouse over link */
+nav a:hover {
+  color: #000;
+  text-shadow: 1px 1px 1px #f90493;
+  font-weight: bold;
+}
+
+/* selected link */
+nav a:active {
+    color: #e5040b;
+}
+
+
+.top-nav {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+  background-color: ;
+}
+
+.top-nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 60px;
+	font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+}
+
+.top-nav a {
+	color: #000;
+}
+
+
+/* main styles start here */
+main {
+	margin: 0 auto;
+}
+
+
+main p {
+	color: #000;
+  font-family: 'Open Sans', sans-serif;
+	font-size: 1.8vw;
+	line-height: 3vw;
+	margin-bottom: 30px;
+}
+
+main h1 {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  padding: 30px 0 20px 0;
+  color: #000;
+  font-family: 'Cantata One', serif;
+}
+
+h2 {
+	font-size: 2rem;
+	font-family: 'Cantata One', serif;
+	padding: 15px 0;
+  color: #f90493;
+	font-weight: bold;
+}
+
+p > strong {
+	font-weight: bold;
+}
+
+section {
+  padding: 30px 80px;
+  margin: 0 auto;
+}
+
+section:nth-of-type(2n) {
+	background-color: #e5040b;
+}
+
+section:nth-of-type(2n) h2{
+	color: black;
+}
+
+section:nth-of-type(2n+1) {
+	background-color: #fff228;
+}
+
+.row, row2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 20px;
+  align-items: center;
+}
+
+#intro .row:first-of-type {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+	
+#intro .row:first-of-type p{
+  font-size: 2.6vw;
+  line-height: 3.6vw;
+  width: 66%;
+  min-width: 200px;
+  padding-top: 40px;
+}
+
+#intro .row2 p {
+  font-size: 2.2vw;
+  line-height: 3vw;
+  padding-top: 30px;
+  padding: 0 15px;
+  width: 50%;
+}
+
+.row figure {
+	min-width: 400px;
+  width: 36%;
+}
+
+.row2 figure {
+	width: 25%;
+	min-width: 100px;
+}
+
+.row2 img {
+	border-radius: 10px;
+}
+
+#links ul {
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+
+#characters img {
+  border-radius: 30px;
+}
+
+#links li{
+  font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+  font-size: 1.8vw;
+	line-height: 3vw;
+  list-style: circle;
+  padding-bottom: 10px;
+}
+
+#links a {
+  font-weight: bold;
+  color: #e5040b;
+}
+
+/* main styles end here */
+
+.validate {
+	text-align: center;
+}
+
+.validate a {
+	text-decoration: none;
+	font-family:;
+	color: #000;
+	font-size: 1.4rem;
+	font-weight: bold;
+	background-color: #fff228;
+	padding: 5px 20px;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+/* footer styles */
+
+footer {
+	text-align: center;
+	font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+  background: -webkit-linear-gradient(#e5040b, #e5040b, #e5040b, #e5040b, #000);
+  background: -ms-linear-gradient(#e5040b, #e5040b, #e5040b, #e5040b, #000);
+  background: -o-linear-gradient(#e5040b, #e5040b, #e5040b, #e5040b, #000);
+  background: -moz-linear-gradient(#e5040b, #e5040b, #e5040b, #e5040b, #000);
+  background: linear-gradient(#e5040b, #e5040b, #e5040b, #e5040b, #000);
+}
+
+footer > * {
+	padding: 20px 0;
+	color: #000;
+}
+
+.btm-nav {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.btm-nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.btm-nav a {
+	color: #000;
+}
+
+
+/*media queries for wider screens */
+/*
+@media screen and (min-width: 721px) {
+  .narrow-nav {display: none;}
+	
+	.row {
+	display: flex;
+	flex-direction: row;
+	}
+	
+	#intro figure {
+	width: 30%;
+	height: auto;
+	}
+
+	#intro p {
+	width: 45%;
+	}
+}
+
+
+@-ms-viewport {
+	width:device-width;
+}
+
+/*media queries for smaller screens */
+
+
+@media screen and (max-width: 720px) {
+  
+  html,body
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  
+  header .title-text{
+    font-size: 19vw;
+  }
+  
+  .top-nav ul {
+    flex-direction: column;
+    height: 160px;
+  }
+  
+  .btm-nav ul {
+    flex-direction: column;
+    height: 160px;
+  }
+  
+	.row {
+      flex-direction: column;
+      align-items: center;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+  
+  h2 {
+    font-size: 7vw;
+  }
+  
+  main p {
+	color: #000;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 4vw;
+	line-height: 6vw;
+    margin-bottom: 30px;
+    min-width: 0;
+    }
+  section {
+    padding: 30px 25px;
+    width: 100%;
+  }
+  
+    #intro .row:first-of-type p{
+      font-size: 4.8vw;
+      line-height: 6.8vw;
+      width: 90%;
+      min-width: 0;
+    }
+
+    #intro .row2 p {
+      font-size: 4.4vw;
+      line-height: 6.2vw;
+      padding-top: 30px;
+      width: 70%;
+      min-width: 0;
+    }
+
+    .row figure {
+        width: 70%;
+    }
+    .row2 figure {
+        width: 70%;
+    }
+  
+  #links li{
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  
+  .validate a {
+	font-size: 4vw;
+  }
+  
+  footer p {
+    font-size: 2.8vw;
+  }
+
+}
+
+
+/*media queries for printing */
+
+@media print {
+  body, section, main, footer, .wrapper {
+    background: none;
+    /* floating is not advised for printers */
+	float: none;
+	
+	/* let the printer set margins */
+	width: auto;
+	margin: 0;
+	padding: 0;
+	
+	/* dont display background colors or images */
+	background: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6, span, p, ul, li, a {color: #000;}
+  
+  header, nav, .validate {display: none;}
+  
+  h2, h2, h4, h5, h6{ 	page-break-after: avoid;	}
+  
+  section, article{ 	page-break-before: always;	}
+  
+  /* add URL info to external links */
+  a[href^="http"]:after{
+     content: " (URL: " attr(href) ") ";
+  }
+
+}

@@ -1,0 +1,59 @@
+/*
+BCIT COMP 1950
+ASSIGNMENT 8: TEMPLATE
+DYLAN TRERISE - MARCH 14 2018
+*/
+header h1 {
+  text-align: center;
+  line-height: 60px;
+  padding-top: 80px;
+  color: #eb7bd1;
+  font-weight: 200;
+}
+
+nav ul {
+  background-color: #eb7bd1;
+  height: 40px;
+}
+
+nav li {
+  list-style: none;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 50px;
+  color: #fde7fa;
+}
+
+main section {
+  margin-bottom: 30px;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.validate p {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.validate a {
+  text-decoration: none;
+  color: #eb7bd1;
+  font-weight: 700;
+  border: 2px solid #eb7bd1;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 5px 2px #fde7fa;
+}
+
+#links li a {
+  color: #eb7bd1;
+}

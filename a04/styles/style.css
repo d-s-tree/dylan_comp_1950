@@ -1,0 +1,291 @@
+/* BCIT COMP 1950 */
+/* ASSIGNMENT 4: CSS LAYOUT */
+/* DYLAN TRERISE - FEB 8 2018 */
+
+/* styling for web page from here! */
+
+/* contrasting color scheme (from adobe color cc):
+
+- #353435  dark grey 
+- #cabfff light indigo (title cursive)
+- #4c3aa8 dark indigo
+- #cabfa8 light orangegrey
+- #e5a92b orange
+*/
+
+/* import fonts from google fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans:400,700");
+
+/* font stacks 
+
+font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+font-family: 'Amatic SC', cursive;
+*/
+
+
+body {
+	background-image: url("../images/regal_background.png");
+	background-attachment: fixed;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	/*background-color: rgba(240,228,255,.5);*/
+	background-color: rgba(244, 239, 249,.52);
+	border-left: 3px dotted #353435;
+	border-right: 3px dotted #353435;
+}
+
+* > a {
+	color: inherit;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+	align-items: top;
+}
+
+header .social-icons {
+	display: flex;
+	width: 220px;
+	justify-content: space-between;
+	color: #353435;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+header .header-content {
+	
+}
+
+.top-nav {
+	border-top: 1px solid #353435;
+	border-bottom: 1px solid #353435;
+}
+
+.top-nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 40px;
+	font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+}
+
+.top-nav a {
+	color: #353435;
+}
+
+header .title-text {
+	width: 50%;
+}
+
+/* main styles start here */
+main {
+	padding: 20px 30px;
+}
+
+main h1:first-of-type {
+	color: #e5a92b;
+	font-weight: bold;
+	font-size: 4.6rem;
+}
+
+main p:first-of-type {
+	color: #e5a92b;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	margin-bottom: 30px;
+}
+
+main h1 {
+	font-size: 3.4rem;
+	font-family: 'Amatic SC', cursive;
+	padding: 30px 0 20px 0;
+	color: #4c3aa8;
+}
+
+main h2 {
+	font-size: 1.8rem;
+	font-family: 'Open Sans', sans-serif;
+	padding: 15px 0;
+}
+
+main p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6rem;
+	color: #353435;
+}
+
+p > strong {
+	font-weight: bold;
+}
+
+p > a {
+	font-style: italic;
+	font-weight: bold;
+	color: #e5a92b;
+}
+
+main ul {
+	padding: 20px 0 20px 40px;
+	line-height: 2rem;
+	list-style: circle;
+	font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+}
+
+/* form styles */
+
+main form {
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 70%;
+	font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+	color: #353435;
+}
+
+.form-section {
+	padding: 10px 0;
+}
+
+.form-section label {
+	display: inline-block;
+	width: 15%;
+	height: 30px;
+	padding: 3px;
+}
+
+.form-section input {
+	width: 84%;
+	height: 30px;
+	padding: 3px;
+}
+
+form textarea {
+	width: 84%;
+	height: 80px;
+	padding: 10px;
+}
+
+.form-section input[type=submit] {
+	width: 100%;
+	height: 30px;
+}
+
+/* table styles */
+table {
+	margin: 40px auto;
+}
+
+table, th, td {
+   border: 1px solid #353435;
+	font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+table th {
+  height: 50px;
+	width: 200px;
+	text-align: left;
+	line-height: 50px;
+	font-weight: bold;
+	padding-left: 10px;
+	color: #4c3aa8;
+}
+
+table td {
+	height: 50px;
+	width: 200px;
+	line-height: 50px;
+	padding-left: 10px;
+}
+
+table tr:nth-of-type(2n +1) {
+	background-color: white;
+}
+
+table tr:nth-of-type(2n) {
+	background-color: #cabfa8;
+}
+
+/* main styles end here */
+
+.validate {
+	text-align: center;
+	padding: 40px 0 20px 0;
+}
+
+.validate a {
+	text-decoration: none;
+	font-family:;
+	color: #353435;
+	font-size: 1.4rem;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+	background-color: #cabfff;
+	padding: 5px 20px;
+	border: 1px solid #353435;
+	border-radius: 5px;
+}
+
+/* product styles */
+
+.products {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 50px;
+}
+
+.products img {
+	height: 200px;
+	width: auto;
+	border: 1px solid #cabfff;
+	border-radius: 10px;
+}
+
+.products figcaption {
+	font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+	text-align: center;
+	padding: 10px 0;
+}
+
+/* footer styles */
+
+footer {
+	text-align: center;
+	font-family: "Open Sans", "Segoe UI", "Tahoma", sans-serif;
+	padding: 20px 0;
+}
+
+footer > * {
+	padding: 20px 0;
+	color: #cabfff;
+}
+
+.btm-nav {
+	border-top: 1px solid #4c3aa8;
+	border-bottom: 1px solid #4c3aa8;
+	padding: 10px 0;
+	margin: 20px 0 40px 0;
+}
+
+.btm-nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.btm-nav a {
+	color: #4c3aa8;
+}
+
+/* footer styles */
+
+

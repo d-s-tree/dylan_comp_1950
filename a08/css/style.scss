@@ -1,0 +1,85 @@
+/*
+BCIT COMP 1950
+ASSIGNMENT 8: TEMPLATE
+DYLAN TRERISE - MARCH 14 2018
+*/
+
+// define some variables
+$darkCherryBlossomColor: rgb(235,123,209);
+$lightCherryBlossomColor:  rgb(253,231,250);
+
+// define some mixins
+
+@mixin nav-li-styles {
+	list-style: none;
+	text-align: center;
+}
+
+@mixin nav-a-styles {
+	text-decoration: none;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 50px;
+	color: $lightCherryBlossomColor;
+}
+
+@mixin button-style {
+	box-shadow: 5px 5px 2px $lightCherryBlossomColor;
+}
+
+@mixin link-styles {
+	color: $darkCherryBlossomColor;
+}
+
+header h1 {
+	text-align: center;
+	line-height: 60px;
+	padding-top: 80px;
+	color: $darkCherryBlossomColor;
+	font-weight: 200;
+}
+
+nav ul {
+	background-color: $darkCherryBlossomColor;
+	height: 40px;
+}
+
+nav li {
+	@include nav-li-styles;
+}
+
+nav a {
+	@include nav-a-styles;
+}
+
+main section {
+	margin-bottom: 30px;
+}
+
+footer p {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+
+
+.validate p {
+	text-align: center;
+	margin-top:
+	40px;
+	margin-bottom: 40px;
+}
+
+.validate a {
+	text-decoration: none;
+	color: $darkCherryBlossomColor;
+	font-weight: 700;
+	border: 2px solid $darkCherryBlossomColor;
+	border-radius: 5px;
+	padding: 10px;
+	@include button-style;
+}
+
+#links li a {
+	@include link-styles;
+}
